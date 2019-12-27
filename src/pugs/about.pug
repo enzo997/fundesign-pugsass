@@ -1,0 +1,54 @@
+extends ./parts/layout.pug
+
+prepend meta
+    title fun-design-showcase-htmlcss
+
+block main-wrapper
+    .about-page
+        section.about-page--main
+            .container
+                .about-page--main--breadcrumb.color-breadcrumb
+                    a(href="index.html") Home 
+                    b / 
+                    b.name About
+                .about-page--main--content-text-banner-top
+                    .row
+                        .col-lg-6.col-md-6.col-sm-12.col-12
+                            .cont-col-left
+                                h4.cont-col-left--title-h4 Our target
+                                .cont-col-left--description
+                                    p Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                        .col-lg-6.col-md-6.col-sm-12.col-12
+                            .cont-col-right
+                                h4.cont-col-right--title-h4 Timeline
+                                .cont-col-right--description
+                                    p Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                .row
+                    .col-lg-4.col-md-4.col-sm-12.col-12
+                        .about-page--main--cont-image
+                            img(src="assets/imgs/About-page/image-about.png", alt="image-about")
+                    .col-lg-4.col-md-4.col-sm-12.col-12
+                        .about-page--main--cont-image
+                            img(src="assets/imgs/About-page/image-about-1.png", alt="image-about")
+                    .col-lg-4.col-md-4.col-sm-12.col-12
+                        .about-page--main--cont-image
+                            img(src="assets/imgs/About-page/image-about-2.png", alt="image-about")
+                .about-page--main--content-text
+                    h4.about-page--main--content-text--title-h4 We're Hiring
+                    .about-page--main--content-text--description
+                        p Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+        section.about-page--main--partner-logo
+            .container
+                .row
+                    .col-lg-3.col-md-4.col-sm-6.col-6
+                        .partner-logo--col-image
+                            img(src="assets/imgs/Home-page/logo-contact.png", alt="logo-partner")
+                    .col-lg-3.col-md-4.col-sm-6.col-6
+                        .partner-logo--col-image
+                            img(src="assets/imgs/Home-page/logo-contact-1.png", alt="logo-partner")
+                    .col-lg-3.col-md-4.col-sm-6.col-6
+                        .partner-logo--col-image
+                            img(src="assets/imgs/Home-page/logo-contact-3.png", alt="logo-partner")
+                    .col-lg-3.col-md-4.col-sm-6.col-6
+                        .partner-logo--col-image
+                            img(src="assets/imgs/Home-page/logo-contact-4.png", alt="logo-partner")

@@ -1,0 +1,93 @@
+extends ./parts/layout.pug
+
+prepend meta
+    title fun-design-showcase-htmlcss
+
+block main-wrapper
+    .work-page
+        section.work-page--top
+            .container
+                .work-page--top--breadcrumb.color-breadcrumb
+                    a(href="index.html") Home 
+                    b / 
+                    b.name Work
+                .work-page--top--nav-menu-work
+                    -
+                        let main_menu_work = [
+                            {href:"work.html", label:"All"},
+                            {href:"work.html", label:"Brading"},
+                            {href:"work.html", label:"Logo"},
+                            {href:"work.html", label:"Website"},
+                            {href:"work.html", label:"Packaging"},
+                            {href:"work.html", label:"Application"},
+                        ]
+                    ul
+                        each item in main_menu_work
+                            li.main-nav-menu-work--field
+                                a(href=item.href)=item.label
+        section.work-page--main
+            .container
+                .work-page--main--cont-group
+                    .work-page--main--cont-group--background-behind
+                    .work-page--main--cont-group--category-image
+                        .row
+                            .col-lg-4.col-md-4.col-sm-12.col-12
+                                a(href="single-work.html" title="BEER")
+                                    .category-image--col-content
+                                        .category-image--col-content--cont-image-category
+                                            img(src="assets/imgs/Work-page/work-page.png", alt="image-work-page")
+                            .col-lg-4.col-md-4.col-sm-12.col-12
+                                a(href="single-work.html" title="BEER")
+                                    .category-image--col-content
+                                        .category-image--col-content--cont-image-category
+                                            img(src="assets/imgs/Work-page/work-page-1.png", alt="image-work-page")
+                            .col-lg-4.col-md-4.col-sm-12.col-12
+                                a(href="single-work.html" title="BEER")
+                                    .category-image--col-content
+                                        .category-image--col-content--cont-image-category
+                                            img(src="assets/imgs/Work-page/work-page-2.png", alt="image-work-page")
+                            .col-lg-4.col-md-4.col-sm-12.col-12
+                                a(href="single-work.html" title="BEER")
+                                    .category-image--col-content
+                                        .category-image--col-content--cont-image-category
+                                            img(src="assets/imgs/Work-page/work-page-3.png", alt="image-work-page")
+                            .col-lg-4.col-md-4.col-sm-12.col-12
+                                a(href="single-work.html" title="BEER")
+                                    .category-image--col-content
+                                        .category-image--col-content--cont-image-category
+                                            img(src="assets/imgs/Work-page/work-page-4.png", alt="image-work-page")
+                            .col-lg-4.col-md-4.col-sm-12.col-12
+                                a(href="single-work.html" title="BEER")
+                                    .category-image--col-content
+                                        .category-image--col-content--cont-image-category
+                                            img(src="assets/imgs/Work-page/work-page-5.png", alt="image-work-page")
+                            .col-lg-4.col-md-4.col-sm-12.col-12
+                                a(href="single-work.html" title="BEER")
+                                    .category-image--col-content
+                                        .category-image--col-content--cont-image-category
+                                            img(src="assets/imgs/Work-page/work-page.png", alt="image-work-page")
+                            .col-lg-4.col-md-4.col-sm-12.col-12
+                                a(href="single-work.html" title="BEER")
+                                    .category-image--col-content
+                                        .category-image--col-content--cont-image-category
+                                            img(src="assets/imgs/Work-page/work-page-1.png", alt="image-work-page")
+                            .col-lg-4.col-md-4.col-sm-12.col-12
+                                a(href="single-work.html" title="BEER")
+                                    .category-image--col-content
+                                        .category-image--col-content--cont-image-category
+                                            img(src="assets/imgs/Work-page/work-page-2.png", alt="image-work-page")
+                            .col-lg-4.col-md-4.col-sm-12.col-12
+                                a(href="single-work.html" title="BEER")
+                                    .category-image--col-content
+                                        .category-image--col-content--cont-image-category
+                                            img(src="assets/imgs/Work-page/work-page-3.png", alt="image-work-page")
+                            .col-lg-4.col-md-4.col-sm-12.col-12
+                                a(href="single-work.html" title="BEER")
+                                    .category-image--col-content
+                                        .category-image--col-content--cont-image-category
+                                            img(src="assets/imgs/Work-page/work-page-4.png", alt="image-work-page")
+                            .col-lg-4.col-md-4.col-sm-12.col-12
+                                a(href="single-work.html" title="BEER")
+                                    .category-image--col-content
+                                        .category-image--col-content--cont-image-category
+                                            img(src="assets/imgs/Work-page/work-page-5.png", alt="image-work-page")

@@ -1,0 +1,38 @@
+extends ./parts/layout.pug
+
+prepend meta
+    title fun-design-showcase-htmlcss
+
+block main-wrapper
+    .contact-page
+        section.contact-page--main
+            .container
+                .contact-page--main--breadcrumb.color-breadcrumb
+                    a(href="index.html") Home 
+                    b / 
+                    b.name Contact
+        #google-map
+        .container
+            .contact-page--main--contact-us
+                h4.contact-us--title-h4 Contact Us
+                .contact-us--description
+                    p Drop as a message and we'll get back to you
+                .contact-us--content-col-group
+                    .contact-us--cont-contact-form
+                        form(action="javascript:void(0)")
+                            input(type="text",name="ten",placeholder="Name",required).name-input
+                            input(type="email",name="email",placeholder="Email",required).email-input
+                            input(type="tel",name="phone-number",placeholder="Phone number",required).phone-input
+                            textarea(name="message", cols="30", rows="4", placeholder="Message",required).message-input
+                            .btn-send 
+                                input(type="submit" value="Send")
+                            output.effect-after-send
+                    .contact-us--information
+                        h4.contact-us--information--title-h4 Address
+                        .contact-us--information--content-address 26A Pagoda St, TANGS, Singapore, 058187
+                        h4.contact-us--information--title-h4 Phone number
+                        .contact-us--information--content-phone 
+                            a(href="#" title = "Tel +6562215462") +65 6221 5462
+                        h4.contact-us--information--title-h4 Email
+                        .contact-us--information--content-email 
+                            a(href="#" title = "Mail to ABC@abc.com.au") ABC@abc.com.au

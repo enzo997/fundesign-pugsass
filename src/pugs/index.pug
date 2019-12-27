@@ -1,0 +1,188 @@
+extends ./parts/layout.pug
+
+prepend meta
+    title fun-design-showcase-htmlcss
+
+//- append stylesheets
+//-     link(rel="stylesheet", href="assets/css/home-page.css")
+    //- link(rel="stylesheet", href="assets/css/bootstrap.css")
+    //- link(rel="stylesheet", href="assets/css/slick.css")
+    //- link(rel="stylesheet", href="assets/css/slick-theme.css")
+        //- link(rel="stylesheet", href="assets/css/main.css")
+
+block main-wrapper
+    //- img(src="assets/imgs/logo-short-a.svg")
+    //- h1 
+    //-     span ABCD
+    //-     span Namtech Ten
+    //- h2 This is a template helping you to make the great projects.
+    //- div.content
+    //-     - 
+    //-         let link = [
+    //-             {href: "https://namtechweb.namtech.xyz/", label: "Visit the official website", target: "_blank"},
+    //-             {href: "https://hackmd.io/@Namtech/namtech-document", label: "Read document", target: "_blank"},
+    //-             {href: "/404.html", label: 'Redirect to 404 page'}
+    //-         ]
+    //-     ul
+    //-         for data in link
+    //-             li  
+    //-                 a(href=data.href, target=data.target ? data.target : "")= data.label
+    .home-page
+        //- section banner top
+        section.home-page--banner-top
+            .container
+                .home-page--banner-top--content
+                    h1.home-page--banner-top--content--title-h1 Hi !
+                    .home-page--banner-top--content--description 
+                        p Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s. 
+                .home-page--banner-top--cont-slider-image
+                    .cont-slider-image--silder-image
+                        .slider-image
+                            img(src="assets/imgs/Home-page/Slick-banner-top.png", alt="image-silder")
+                    .cont-slider-image--silder-image
+                        .slider-image
+                            img(src="assets/imgs/Home-page/image-blog.png", alt="image-silder")
+                    .cont-slider-image--silder-image
+                        .slider-image
+                            img(src="assets/imgs/Home-page/Slick-banner-top.png", alt="image-silder")
+                    .cont-slider-image--silder-image
+                        .slider-image
+                            img(src="assets/imgs/Home-page/Slick-banner-top.png", alt="image-silder")
+                    .cont-slider-image--silder-image
+                        .slider-image
+                            img(src="assets/imgs/Home-page/Slick-banner-top.png", alt="image-silder")
+            .home-page--banner--top--background-behind
+        //- section our work
+        section.home-page--our-work
+            .container
+                h4.home-page--our-work--title-h4 Our Work
+                .our-work--description 
+                    p Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                .our-work--cont-group
+                    .our-work--cont-group--background-behind
+                    .our-work--cont-group--category-image
+                        .row
+                            .col-lg-4.col-md-4.col-sm-12.col-12
+                                .category-image--col-content
+                                    .category-image--col-content--cont-image-category
+                                        a(href="work.html" title="Brand")
+                                            img(src="assets/imgs/Home-page/our-work.png", alt="image-our-work")
+                                    .category-image--col-content--title-category 
+                                        a(href="work.html") Brand
+                            .col-lg-4.col-md-4.col-sm-12.col-12
+                                .category-image--col-content
+                                    .category-image--col-content--cont-image-category
+                                        a(href="work.html" title="Logo")
+                                            img(src="assets/imgs/Home-page/our-work-1.png", alt="image-our-work")
+                                    .category-image--col-content--title-category 
+                                        a(href="work.html") Logo
+                            .col-lg-4.col-md-4.col-sm-12.col-12
+                                .category-image--col-content
+                                    .category-image--col-content--cont-image-category
+                                        a(href="work.html" title="Website")
+                                            img(src="assets/imgs/Home-page/our-work-2.png", alt="image-our-work")
+                                    .category-image--col-content--title-category 
+                                        a(href="work.html") Website
+                            .col-lg-4.col-md-4.col-sm-12.col-12
+                                .category-image--col-content
+                                    .category-image--col-content--cont-image-category
+                                        a(href="work.html" title="Pakaging")
+                                            img(src="assets/imgs/Home-page/our-work-3.png", alt="image-our-work")
+                                    .category-image--col-content--title-category
+                                        a(href="work.html") Packaging
+                            .col-lg-4.col-md-4.col-sm-12.col-12
+                                .category-image--col-content
+                                    .category-image--col-content--cont-image-category
+                                        a(href="work.html" title="Application")
+                                            img(src="assets/imgs/Home-page/our-work-4.png", alt="image-our-work")
+                                    .category-image--col-content--title-category 
+                                        a(href="work.html") Application
+                
+        //- section people saying
+        section.home-page--people-saying
+            .container
+                h4.home-page--people-saying--title-h4 What people are saying
+                .home-page--people-saying--description 
+                    p If you’re looking for the latest in wireless headphones for your enjoyment and private listening, whether to TV, stereo, home entertainment such as theater
+                .row
+                    .col-lg-4.col-md-4.col-sm-12.col-12
+                        .people-saying--cont-group
+                            .people-saying--cont-group--cont-image
+                                img(src="assets/imgs/Home-page/people.png", alt="image-people-saying")
+                            .people-saying--cont-group--cont-text
+                                .people-saying--cont-group--cont-text--name Lydia Gibson
+                                .people-saying--cont-group--cont-text--job-position CEO
+                                .people-saying--cont-group--cont-text--description 
+                                    p A major turning point in the history of early philosophical science was the controversial 
+                    .col-lg-4.col-md-4.col-sm-12.col-12
+                        .people-saying--cont-group
+                            .people-saying--cont-group--cont-image
+                                img(src="assets/imgs/Home-page/people-1.png", alt="image-people-saying")
+                            .people-saying--cont-group--cont-text
+                                .people-saying--cont-group--cont-text--name Lydia Gibson
+                                .people-saying--cont-group--cont-text--job-position CEO
+                                .people-saying--cont-group--cont-text--description 
+                                    p A major turning point in the history of early philosophical science was the controversial 
+                    .col-lg-4.col-md-4.col-sm-12.col-12
+                        .people-saying--cont-group
+                            .people-saying--cont-group--cont-image
+                                img(src="assets/imgs/Home-page/people-2.png", alt="image-people-saying")
+                            .people-saying--cont-group--cont-text
+                                .people-saying--cont-group--cont-text--name Lydia Gibson
+                                .people-saying--cont-group--cont-text--job-position CEO
+                                .people-saying--cont-group--cont-text--description
+                                    p A major turning point in the history of early philosophical science was the controversial 
+        //- section blog
+        section.home-page--Blog
+            .container
+                h4.home-page--Blog--title-h4 Blog
+                .home-page--Blog--description 
+                    p Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                .row
+                    .col-lg-4.col-md-4.col-sm-12.col-12
+                        .Blog--group-content
+                            .Blog--group-content--cont-image
+                                a(href="single-blog.html" title="Lorem Ipsum is simply dummy text of the printing and typesetting industry.")
+                                    img(src="assets/imgs/Home-page/image-blog.png", alt="image-blog")
+                            .Blog--group-content--box-description 
+                                a(href="single-blog.html" title="Lorem Ipsum is simply dummy text of the printing and typesetting industry.")
+                                    p Lorem Ipsum is simply dummy text of the printing and...
+                    .col-lg-4.col-md-4.col-sm-12.col-12
+                        .Blog--group-content
+                            .Blog--group-content--cont-image
+                                a(href="single-blog.html" title="Lorem Ipsum is simply dummy text of the printing and typesetting industry.")
+                                    img(src="assets/imgs/Home-page/image-blog-1.png", alt="image-blog")
+                            .Blog--group-content--box-description 
+                                a(href="single-blog.html" title="Lorem Ipsum is simply dummy text of the printing and typesetting industry.")
+                                    p Lorem Ipsum is simply dummy text of the printing and...
+                    .col-lg-4.col-md-4.col-sm-12.col-12
+                        .Blog--group-content
+                            .Blog--group-content--cont-image
+                                a(href="single-blog.html" title="Lorem Ipsum is simply dummy text of the printing and typesetting industry.")
+                                    img(src="assets/imgs/Home-page/image-blog-2.png", alt="image-blog")
+                            .Blog--group-content--box-description 
+                                a(href="single-blog.html" title="Lorem Ipsum is simply dummy text of the printing and typesetting industry.")
+                                    p Lorem Ipsum is simply dummy text of the printing and...
+        //- section common             
+        section.home-page--partner-logo
+            .container
+                .row
+                    .col-lg-3.col-md-4.col-sm-6.col-6
+                        .partner-logo--col-image
+                            img(src="assets/imgs/Home-page/logo-contact.png", alt="logo-partner")
+                    .col-lg-3.col-md-4.col-sm-6.col-6
+                        .partner-logo--col-image
+                            img(src="assets/imgs/Home-page/logo-contact-1.png", alt="logo-partner")
+                    .col-lg-3.col-md-4.col-sm-6.col-6
+                        .partner-logo--col-image
+                            img(src="assets/imgs/Home-page/logo-contact-3.png", alt="logo-partner")
+                    .col-lg-3.col-md-4.col-sm-6.col-6
+                        .partner-logo--col-image
+                            img(src="assets/imgs/Home-page/logo-contact-4.png", alt="logo-partner")
+
+
+
+
+
+
+

@@ -1,0 +1,155 @@
+.contact-page{
+    background: #222;
+    padding-top: 17px;
+    padding-bottom: 100px;
+    &--main{
+        &--breadcrumb{
+            color: #ffffff;
+            font-family: Poppins-Light;
+            font-weight: 300;
+            margin-bottom: 14px;
+            font-size: 13px;
+        }
+        &--contact-us{
+            background: #282828;
+            margin-top: 100px;
+            max-width: 1110px;
+            min-height: 575px;
+            padding: 40px 0px 50px;
+
+            .contact-us--title-h4{
+                color: #ffffff;
+                font-family: Poppins-Bold;
+                font-size: 32px;
+                font-weight: 700;
+                text-align: center;
+                margin-bottom: 9px;
+            }
+            .contact-us--description{ 
+                p{
+                    color: #d0d0d0;
+                    font-family: Poppins-Light;
+                    font-size: 15px;
+                    font-weight: 400;
+                    line-height: 26px;
+                    text-align: center;
+                    margin-bottom: 40px;
+                }
+
+            }
+            .contact-us--content-col-group{
+                display: flex;
+                flex-wrap: wrap;
+
+
+                .contact-us--cont-contact-form{
+                    width: 100%;
+                    max-width: 400px;
+                    margin-left: 238px;
+                    margin-right: 88px;
+                    input{
+                        width: 100%;
+                        height: 100%;
+                        min-height: 40px;
+                        padding-left: 10px;
+                        background-color: #222222;
+                        border: none;
+                        margin-bottom: 16px;
+                        color: #ffffff;
+                        font-family: Poppins-Light;
+                        font-size: 14px;
+                        font-weight: 400;
+                        line-height: 20px;
+                    }
+                    textarea{
+                        width: 100%;
+                        height: 100%;
+                        min-height: 120px;
+                        padding-left: 10px;
+                        background-color: #222222;
+                        border: none;
+                        margin-bottom: 24px;
+                        color: #ffffff;
+                        font-family: Poppins-Light;
+                        font-size: 14px;
+                        font-weight: 400;
+                        line-height: 20px;
+                    }
+                    input::-webkit-input-placeholder, textarea::-webkit-input-placeholder{ /* Chrome/Opera/Safari */
+                        color: #d0d0d0;
+                        font-family: Poppins-Light;
+                        font-size: 14px;
+                        font-weight: 400;
+                        line-height: 20px;
+                    }
+                    input::-moz-placeholder, textarea::-webkit-input-placeholder{ /* Firefox 19+ */
+                        font-family: Poppins-Light;
+                        font-size: 14px;
+                        font-weight: 400;
+                        line-height: 20px;
+
+                    }
+                    input:-ms-input-placeholder, textarea::-webkit-input-placeholder{ /* IE 10+ */
+                        font-family: Poppins-Light;
+                        font-size: 14px;
+                        font-weight: 400;
+                        line-height: 20px;
+
+                    }
+                    input:-moz-placeholder , textarea::-webkit-input-placeholder{ /* Firefox 18- */
+                        font-family: Poppins-Light;
+                        font-size: 14px;
+                        font-weight: 400;
+                        line-height: 20px;
+                    }
+                    .btn-send{
+                        input{
+                            background-color: #e2e2e2;
+                            color: #222222;
+                            font-family:  Poppins-semiBold;
+                            font-size: 16px;
+                            font-weight: 600;
+                            &:hover{
+                                color: #ffffff;
+                                background-color: #282828;
+                                border: 1px  solid #ffffff;
+                                transition: all .2s ease-out;
+                            }
+                        }
+                    }
+                }
+                .contact-us--information{
+                    &--title-h4{
+                        color: #ffffff;
+                        font-family: Poppins-Bold;
+                        font-size: 20px;
+                        font-weight: 700;
+                        letter-spacing: 1.43px;
+                        line-height: 32px;
+                        margin-bottom: 8px;
+                    }
+                    &--content-address{
+                        max-width: 166px;
+                        min-height: 50px;
+                        color: #d0d0d0;
+                        font-family: Poppins-Light;
+                        font-size: 15px;
+                        font-weight: 400;
+                        line-height: 26px;
+                        margin-bottom: 38px;
+                    }
+                    &--content-phone, &--content-email{
+                        margin-bottom: 29px;
+                        max-width: 166px;
+                        min-height: 26px;
+                        color: #d0d0d0;
+                        font-family: Poppins-Light;
+                        font-size: 15px;
+                        font-weight: 400;
+                        line-height: 26px;
+                    }
+                }
+            }
+        }
+    }
+}

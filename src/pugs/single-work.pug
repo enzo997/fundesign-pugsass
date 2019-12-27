@@ -1,0 +1,52 @@
+extends ./parts/layout.pug
+
+prepend meta
+    title fun-design-showcase-htmlcss
+
+block main-wrapper
+    .single-work
+        section.single-work--top
+            .container
+                .single-work--top--breadcrumb.color-breadcrumb
+                    a(href="index.html") Home 
+                    b / 
+                    a(href="work.html") Work
+                    b / 
+                    b.name Detail
+                h4.single-work--top--title-h4 BEER
+                .single-work--top--description
+                    p If you’re looking for the latest in wireless headphones for your enjoyment and private listening, whether to TV
+                .single-work--top--cont-image-banner-top
+                    img(src="assets/imgs/Work-Detail/Banner-1.png", alt="image-banner-top")
+                .single-work--top--description-under-image-top
+                    p Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in 
+                .row
+                    .col-lg-6.col-md--6.col-sm-12.col-12
+                        .single-work--top--cont-iamge-under-description
+                            img(src="assets/imgs/Work-Detail/image-single-1.png", alt="image-single")
+                    .col-lg-6.col-md--6.col-sm-12.col-12
+                        .single-work--top--cont-iamge-under-description
+                            img(src="assets/imgs/Work-Detail/image-single-2.png", alt="image-single")
+                .single-work--top--finnal-description
+                    p Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in 
+                .single-work--top--finnal-cont-image
+                    img(src="assets/imgs/Work-Detail/Banner-2.png", alt="image-banner")
+        section.single-work--view-similar-Work
+            .container
+                h4.single-work--view-similar-Work--title-h4 View Similar Work
+                .single-work--view-similar-Work--description
+                    p Lorem Ipsum is simply dummy text of the
+                .row
+                    .col-lg-4.col-md-4.col-sm-12.col-12
+                        a(href="single-work.html" title="BEER")
+                            .single-work--view-similar-Work--cont-image
+                                img(src="assets/imgs/Work-Detail/image-sigle-similar-1.png", alt="image-single-similar")
+                    .col-lg-4.col-md-4.col-sm-12.col-12
+                        a(href="single-work.html" title="BEER")
+                            .single-work--view-similar-Work--cont-image
+                                img(src="assets/imgs/Work-Detail/image-sigle-similar-2.png", alt="image-single-similar")
+                    .col-lg-4.col-md-4.col-sm-12.col-12
+                        a(href="single-work.html" title="BEER")
+                            .single-work--view-similar-Work--cont-image
+                                img(src="assets/imgs/Work-Detail/image-sigle-similar-3.png", alt="image-single-similar")
+                

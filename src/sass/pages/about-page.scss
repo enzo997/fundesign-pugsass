@@ -1,0 +1,90 @@
+.about-page{
+    background: #222222;
+    padding-top: 17px;
+    &--main{
+        padding-bottom: 129px;
+        &--breadcrumb{
+            color: #ffffff;
+            font-family: Poppins-Light;
+            font-weight: 300;
+            margin-bottom: 14px;
+            font-size: 13px;
+        }
+        &--content-text-banner-top{
+            background-color: #282828;
+            min-height: 386px;
+            padding: 50px 52px 32px;
+            margin-bottom: 60px;
+            .cont-col-left, .cont-col-right{
+                &--title-h4{
+                    color: #ffffff;
+                    font-family: Poppins-Bold;
+                    font-size: 20px;
+                    font-weight: 700;
+                    letter-spacing: 1.43px;
+                    line-height: 32px;
+                    margin-bottom: 15px;
+                }
+                &--description{
+                    p{
+                        max-width: 488px;
+                        min-height: 257px;
+                        color: #d0d0d0;
+                        font-family: Poppins-Light;
+                        font-size: 15px;
+                        font-weight: 400;
+                        line-height: 26px;
+                        margin: 0;
+                    }
+                }
+            }
+        }
+        &--cont-image{
+            width: 100%;
+            height: 348px;
+            margin-bottom: 30px;
+            img{
+                height: 100%;
+                width: 100%;
+                object-fit: cover;
+            }
+        }
+        &--content-text{
+            padding: 50px 52px 48px;
+            background-color: #282828;
+            min-height: 272px;
+            margin-top: 30px;
+            &--title-h4{
+                color: #ffffff;
+                font-family: Poppins-Bold;
+                font-size: 20px;
+                font-weight: 700;
+                letter-spacing: 1.43px;
+                line-height: 32px;
+                text-align: center;
+                margin-bottom: 15px;
+            }
+            &--description{
+                p{
+                    max-width: 1005px;
+                    min-height: 127px;
+                    color: #d0d0d0;
+                    font-family: Poppins-Light;
+                    font-size: 15px;
+                    font-weight: 400;
+                    line-height: 26px;
+                    margin: 0;
+                }
+            }
+        }
+        &--partner-logo{
+            padding-bottom: 129px;
+            background-color: #222222;
+            .partner-logo--col-image{
+                img{
+                    margin-left: 70px;
+                }
+            }
+        }
+    }
+}

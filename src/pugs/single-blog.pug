@@ -1,0 +1,57 @@
+extends ./parts/layout.pug
+
+prepend meta
+    title fun-design-showcase-htmlcss
+
+block main-wrapper
+    .single-blog
+        section.single-blog--main
+            .container
+                .single-blog--main--breadcrumb.color-breadcrumb
+                    a(href="index.html") Home 
+                    b / 
+                    a(href="blog.html") Blogs
+                    b / 
+                    b.name Detail
+                h2.single-blog--main--title-h2 Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                .row
+                    .col-ld-9.col-md-9.col-sm-12.col-12
+                        .single-blog--main--col-left
+                            .col-left--cont-img
+                                img(src="assets/imgs/Blog-Detail/single-blog-1.png", alt="image-single-blog")
+                            .col-left--cont-text
+                                .col-left--cont-text--description
+                                    p Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+                                    p Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+                        .single-blog--main--col-left
+                            .col-left--cont-img
+                                img(src="assets/imgs/Blog-Detail/single-blog.png", alt="image-single-blog")
+                            .col-left--cont-text
+                                .col-left--cont-text--description
+                                    p Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+                    .col-ld-3.col-md-3.col-sm-12.col-12
+                        h4.single-blog--main--title-h4 you may also like
+                        .single-blog--main--col-right
+                            .col-right--cont-img
+                                a(href="single-blog.html" title="Lorem Ipsum is simply dummy text of the printing and typesetting industry.")
+                                    img(src="assets/imgs/Blog-Detail/image-blog.png", alt="image-single-blog")
+                            .col-right--cont-text
+                                a(href="single-blog.html" title="Lorem Ipsum is simply dummy text of the printing and typesetting industry.")
+                                    h4.col-right--cont-text--title-h4 
+                                        a(href="single-blog.html" title="Lorem Ipsum is simply dummy text of the printing and typesetting industry.") Lorem Ipsum is simply dummy text of the…
+                        .single-blog--main--col-right
+                            .col-right--cont-img
+                                a(href="single-blog.html" title="Lorem Ipsum is simply dummy text of the printing and typesetting industry.")
+                                    img(src="assets/imgs/Blog-Detail/image-blog-5.png", alt="image-single-blog")
+                            .col-right--cont-text
+                                a(href="single-blog.html" title="Lorem Ipsum is simply dummy text of the printing and typesetting industry.")
+                                    h4.col-right--cont-text--title-h4 
+                                        a(href="single-blog.html" title="Lorem Ipsum is simply dummy text of the printing and typesetting industry.") Lorem Ipsum is simply dummy text of the…
+                        .single-blog--main--col-right
+                            .col-right--cont-img
+                                a(href="single-blog.html" title="Lorem Ipsum is simply dummy text of the printing and typesetting industry.")
+                                    img(src="assets/imgs/Blog-Detail/image-blog-4.png", alt="image-single-blog")
+                            .col-right--cont-text
+                                a(href="single-blog.html" title="Lorem Ipsum is simply dummy text of the printing and typesetting industry.")
+                                    h4.col-right--cont-text--title-h4 
+                                        a(href="single-blog.html" title="Lorem Ipsum is simply dummy text of the printing and typesetting industry.") Lorem Ipsum is simply dummy text of the…

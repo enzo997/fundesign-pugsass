@@ -1,0 +1,56 @@
+extends ./parts/layout.pug
+
+prepend meta
+    title fun-design-showcase-htmlcss
+
+block main-wrapper
+    .blog-page
+        section.blog-page--main
+            .container
+                .blog-page--main--breadcrumb.color-breadcrumb
+                    a(href="index.html") Home 
+                    b / 
+                    b.name Blogs
+                .blog-page--nav-menu-blog
+                    -
+                        let main_menu_blog = [
+                            {href:"blog.html", label:"All"},
+                            {href:"blog.html", label:"Hot"},
+                            {href:"blog.html", label:"New"},
+                            {href:"blog.html", label:"Most view"},
+                        ]
+                    ul
+                        each item in main_menu_blog
+                            li.main-nav-menu-blog--field
+                                a(href=item.href)=item.label
+                .blog-page--box-content-blog
+                    - 
+                        let image_in_box = [
+                            {src:"assets/imgs/Blog-page/image-blog.png",alt:"image-blog-page"},
+                            {src:"assets/imgs/Blog-page/image-blog-1.png",alt:"image-blog-page"},
+                            {src:"assets/imgs/Blog-page/image-blog-2.png",alt:"image-blog-page"},
+                            {src:"assets/imgs/Blog-page/image-blog-3.png",alt:"image-blog-page"},
+                            {src:"assets/imgs/Blog-page/image-blog-4.png",alt:"image-blog-page"},
+                            {src:"assets/imgs/Blog-page/image-blog-5.png",alt:"image-blog-page"},
+                            {src:"assets/imgs/Blog-page/image-blog.png",alt:"image-blog-page"},
+                            {src:"assets/imgs/Blog-page/image-blog-1.png",alt:"image-blog-page"},
+                            {src:"assets/imgs/Blog-page/image-blog-2.png",alt:"image-blog-page"},
+                            {src:"assets/imgs/Blog-page/image-blog-3.png",alt:"image-blog-page"},
+                            {src:"assets/imgs/Blog-page/image-blog-4.png",alt:"image-blog-page"},
+                            {src:"assets/imgs/Blog-page/image-blog-5.png",alt:"image-blog-page"},
+                        ]
+                    .row
+                        each items in image_in_box
+                            .col-ld-4.col-md-4.col-sm-12.col-12
+                                .cont-box
+                                    a(href="single-blog.html" title="Lorem Ipsum is simply dummy text of the printing and typesetting industry.")
+                                        .content-blog--cont-image
+                                            img(src=items.src,alt=items.alt)
+                                    .content-blog--cont-text
+                                        a(href="blog.html" title="Lorem Ipsum is simply dummy text of the printing and typesetting industry.")
+                                            h5.content-blog--cont-text--title-h5 
+                                                a(href="single-blog.html" title="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s") Lorem Ipsum is simply dummy text of the…
+                                        .content-blog--cont-text--description
+                                            p Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s…
+
+                                    

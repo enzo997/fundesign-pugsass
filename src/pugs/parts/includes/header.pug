@@ -1,0 +1,33 @@
+.common-header
+    header.header-mobile#header
+        .container
+            .header-mobile--content-header
+                .header-mobile--content-header-cont-logo
+                    a(href="index.html")
+                        img(src="assets/imgs/default/logo.png", alt="image-logo")
+                .header-mobile--content-header--cont-menu-bar
+                    .btn-bar
+                        .icon-menu
+                        .close-icon-menu
+    header.header-desktop#header
+        .container
+            .header-desktop--content-header
+                .header-desktop--content-header--col-left
+                    .header-desktop--content-header--col-left--cont-logo  
+                        a(href="index.html")
+                            img(src="assets/imgs/default/logo.png", alt="image-logo")
+                .header-desktop--content-header--col-right
+                    .header-desktop--content-header--col-right--main-nav-menu
+                        -
+                            let main_menu = [
+                                {href:"index.html", label:"Home"},
+                                {href:"work.html", label:"Work"},
+                                {href:"about.html", label:"About"},
+                                {href:"blog.html", label:"Blog"},
+                                {href:"contact.html", label:"Contact"},
+                            ]
+                        ul
+                            each item in main_menu
+                                li.main-nav-menu--field
+                                    a(href=item.href)=item.label
+        .background-full-black

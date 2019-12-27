@@ -1,0 +1,44 @@
+.common-footer
+    footer.footer#footer
+        .container
+            .main-footer
+                .footer--col-left
+                    -
+                        let main_menu_footer = [
+                            {href:"index.html", label:"Home"},
+                                {href:"work.html", label:"Work"},
+                                {href:"about.html", label:"About"},
+                                {href:"blog.html", label:"Blog"},
+                                {href:"contact.html", label:"Contact"},
+                        ]
+                    ul
+                        each item in main_menu_footer
+                            li.main-nav-menu-footer--field
+                                a(href=item.href)=item.label
+                .footer--col-right
+                    .footer--col-right--cont-social-network
+                        ul
+                            li
+                                a(href="#")
+                                    img(src="assets/imgs/default/icon-social.png", alt="icon-social-network")
+                            li
+                                a(href="#")
+                                    img(src="assets/imgs/default/icon-social-1.png", alt="con-social-network")
+                            li
+                                a(href="#")
+                                    img(src="assets/imgs/default/icon-social-2.png", alt="con-social-network")
+                            li
+                                a(href="#")
+                                    img(src="assets/imgs/default/icon-social-3.png", alt="con-social-network")
+            .footer--copyright
+                .footer--copyright--col-left
+                    .footer--copyright--col-left--cont-logo
+                        a(href="index.html")
+                            img(src="assets/imgs/default/logo.png", alt="image-logo")
+                    
+                .footer--copyright--col-right
+                    p © Copyright 2019 | All Rights Reserved
+.button-bottom-scroll
+    .container
+        .btn-scroll-top
+            i.fa.fas.fa-chevron-right
